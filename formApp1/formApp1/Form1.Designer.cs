@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.mgtk = new System.Windows.Forms.Button();
+            this.tekstoDezute = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // mgtk
+            // 
+            this.mgtk.Location = new System.Drawing.Point(96, 128);
+            this.mgtk.Name = "mgtk";
+            this.mgtk.Size = new System.Drawing.Size(102, 31);
+            this.mgtk.TabIndex = 0;
+            this.mgtk.Text = "Paspausk mane";
+            this.mgtk.UseVisualStyleBackColor = true;
+            this.mgtk.Click += new System.EventHandler(this.mgtk_Click);
+            // 
+            // tekstoDezute
+            // 
+            this.tekstoDezute.Location = new System.Drawing.Point(71, 165);
+            this.tekstoDezute.Multiline = true;
+            this.tekstoDezute.Name = "tekstoDezute";
+            this.tekstoDezute.Size = new System.Drawing.Size(156, 178);
+            this.tekstoDezute.TabIndex = 1;
+            this.tekstoDezute.TextChanged += new System.EventHandler(this.tekstoDezute_TextChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(302, 450);
+            this.Controls.Add(this.tekstoDezute);
+            this.Controls.Add(this.mgtk);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button mgtk;
+        private System.Windows.Forms.TextBox tekstoDezute;
     }
 }
 

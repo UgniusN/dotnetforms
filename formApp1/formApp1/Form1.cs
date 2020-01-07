@@ -16,5 +16,17 @@ namespace formApp1
         {
             InitializeComponent();
         }
+
+        private void mgtk_Click(object sender, EventArgs e)
+        {
+            DateTime siandienosData = DateTime.Today;
+            String diena = siandienosData.ToString();
+            tekstoDezute.Text = $"Ugnius {diena}";
+        }
+
+        private void tekstoDezute_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
